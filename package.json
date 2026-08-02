@@ -1,0 +1,13 @@
+{
+  "name": "thiep-moi-toan-co-tra",
+  "version": "1.0.0",
+  "description": "Thiệp Mời Vinh Danh Giao Hưởng Của Những Ước Mơ - Hệ Thống Toán Cô Trà",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

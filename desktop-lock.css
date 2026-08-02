@@ -1,0 +1,35 @@
+/* V75 — UI only. Base B2UiKKmLG / b80fprpnf. No capture/export changes. */
+:root{--tct-ui-width:450px;--tct-side:#f1eadc}
+html,body{min-width:0!important;overflow-x:hidden!important}
+body{margin:0!important;background:radial-gradient(circle at 50% 8%,rgba(255,255,255,.72),transparent 42%),var(--tct-side)!important}
+body>.app{width:100%!important;max-width:var(--tct-ui-width)!important;margin:0 auto!important;overflow-x:hidden!important;box-shadow:0 20px 64px rgba(88,67,54,.14)!important}
+body>.app .stage,body>.app .rsvp{width:100%!important;max-width:var(--tct-ui-width)!important;margin-left:auto!important;margin-right:auto!important}
+@media(min-width:451px){body>.app{min-height:100vh!important}}
+@media(max-width:450px){body>.app{max-width:none!important;box-shadow:none!important}}
+.capture-render-host,.capture-clone-host,.export-host,#capture-area,.v74-host,#v74-capture{max-width:none!important}
+#page1:not(.capture-mode){--card-width:min(436px,calc(100vw - 14px))!important}
+#page1:not(.capture-mode) .program-title,#page1:not(.capture-mode) .program-title-text{position:relative!important;display:block!important;width:100%!important;margin:0!important;padding:0 7px!important;font-size:24px!important;line-height:27px!important;letter-spacing:-.025em!important;text-align:center!important;white-space:nowrap!important}
+#page1:not(.capture-mode) .invite-layout{grid-template-rows:auto minmax(0,1fr)!important;row-gap:16px!important}
+#page1:not(.capture-mode) .copy{position:relative!important;inset:auto!important;transform:none!important;display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important}
+#page1:not(.capture-mode) .guest-text-group{position:relative!important;inset:auto!important;transform:none!important;display:flex!important;flex-direction:column!important;align-items:center!important;width:100%!important;margin:0!important;padding:0!important;text-align:center!important}
+#page1:not(.capture-mode) .kicker{position:relative!important;inset:auto!important;transform:none!important;margin:0 0 6px!important;padding:0!important;font-size:8px!important;line-height:11px!important;letter-spacing:.09em!important;text-align:center!important}
+#page1:not(.capture-mode) .kicker>span{display:block!important;margin-top:1px!important;font-size:11px!important;line-height:14px!important}
+#page1:not(.capture-mode) .con-label{margin:0!important;font-size:22px!important;line-height:23px!important;text-align:center!important}
+#page1:not(.capture-mode) .student{display:block!important;width:100%!important;max-width:100%!important;margin:0 0 7px!important;font-size:31px!important;line-height:29px!important;text-align:center!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:clip!important;word-break:normal!important;overflow-wrap:normal!important}
+#page1:not(.capture-mode) .parent{display:block!important;width:100%!important;margin:6px 0 7px!important;font-size:9px!important;line-height:12px!important;text-align:center!important;white-space:normal!important}
+#page1:not(.capture-mode) .parent strong{line-height:12px!important}
+#page1:not(.capture-mode) .note{width:100%!important;margin:6px 0 0!important;font-size:8px!important;line-height:12px!important;text-align:center!important}
+#page1:not(.capture-mode) .meta{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:4px!important;margin-top:12px!important}
+#page1:not(.capture-mode) .meta-card{min-height:45px!important;padding:6px!important;border-radius:7px!important}
+#page1:not(.capture-mode) .meta-label{margin:0 0 3px!important;font-size:6px!important;line-height:9px!important}
+#page1:not(.capture-mode) .meta-value,#page1:not(.capture-mode) .meta-time-text{font-size:7px!important;line-height:10px!important}
+#page1:not(.capture-mode) .meta-value .icon{display:none!important}
+#page1:not(.capture-mode) .time{margin:0!important;padding:0!important;transform:translateY(-3px)!important;font-size:13px!important;line-height:15px!important}
+#page1:not(.capture-mode) .timeline-card h3{min-height:0!important;margin:0!important;font-size:12px!important;line-height:14px!important;text-align:center!important}
+#page1:not(.capture-mode) .timeline-card p{margin:4px 0 0!important;font-size:7px!important;line-height:10px!important;text-align:center!important}
+#page1:not(.capture-mode) .footer-note{margin:4px auto 0!important;padding:3px 6px!important;font-size:10px!important;line-height:13px!important;text-align:center!important}
+.rsvp-title{display:block!important;margin:0 0 8px!important;padding:0!important;font-size:14px!important;line-height:19px!important;text-align:center!important}
+.rsvp-btn,.rsvp-btn.no{min-height:44px!important;padding:10px 12px!important;font-size:12px!important;line-height:16px!important;text-align:center!important}
+.floating-actions .guide-fab,.floating-actions .fab{font-size:12px!important;line-height:16px!important}
+@media(min-width:901px){#page1:not(.capture-mode) .program-title,#page1:not(.capture-mode) .program-title-text{font-size:24px!important;line-height:27px!important}#page1:not(.capture-mode) .kicker{font-size:8px!important;line-height:11px!important;margin:0 0 6px!important}#page1:not(.capture-mode) .kicker>span{font-size:11px!important;line-height:14px!important}#page1:not(.capture-mode) .con-label{font-size:22px!important;line-height:23px!important}#page1:not(.capture-mode) .student{font-size:31px!important;line-height:29px!important}#page1:not(.capture-mode) .parent{font-size:9px!important;line-height:12px!important;margin:6px 0 7px!important}#page1:not(.capture-mode) .note{font-size:8px!important;line-height:12px!important;margin:6px 0 0!important}}
+.rsvp-deadline{margin:0 0 9px!important;padding:0!important;color:#7f4661!important;font-size:12px!important;font-style:italic!important;line-height:16px!important;text-align:center!important}
