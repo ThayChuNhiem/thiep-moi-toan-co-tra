@@ -7,11 +7,12 @@ const PORT = process.env.PORT || 3000;
 // Serve static files from root directory
 app.use(express.static(__dirname));
 
-// Fallback to index.html for single page application routing
+// Fallback routing to index.html
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+// Explicitly bind to 0.0.0.0 for Render health checker
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server listening on 0.0.0.0:${PORT}`);
 });
