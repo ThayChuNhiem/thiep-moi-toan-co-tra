@@ -48,6 +48,13 @@ input, select, textarea {
 button, .tab, .rsvp-btn, .fab, .guide-fab, .action {
   touch-action: manipulation;
   cursor: pointer;
+  white-space: nowrap !important;
+}
+
+.guide-fab, .fab, .floating-actions button, .guide-fab span {
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  text-align: center !important;
 }
 
 /* Fix non-transparent PNG bounding box / halo on floating music notes */
