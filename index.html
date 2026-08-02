@@ -6854,6 +6854,26 @@ body:not(.export-mode):not(.mobile-export-mode) #page1 .export-decoration-layer{
 
   <div class="upload">
     <div class="upload-preview" id="uploadPreview">Bấm để chọn ảnh của con hoặc gia đình</div>
+  <div class="guide-step">
+    <span class="guide-number">4</span>
+    <span>Chọn một trong ba hình thức tham dự ở phía dưới; hệ thống sẽ mở biểu mẫu xác nhận tương ứng.</span>
+  </div>
+
+  <p class="guide-note">Ảnh chỉ được xử lý trên thiết bị của gia đình và không tự động tải lên máy chủ.</p>
+</aside>
+
+<div class="modal-bg" id="modalBg"></div>
+<section class="modal" id="modal" aria-hidden="true">
+  <button class="close" id="closeModal">Đóng</button>
+  <h2>Tạo thiệp mời cá nhân hóa</h2>
+
+  <div class="grid2">
+    <div class="field"><label>Tên phụ huynh</label><input id="parentInput" value="Nguyễn Văn B" placeholder="Ví dụ: Nguyễn Văn B"></div>
+    <div class="field"><label>Tên của con</label><input id="studentInput" value="Nguyễn Văn A" placeholder="Ví dụ: Nguyễn Văn A"></div>
+  </div>
+
+  <div class="upload">
+    <div class="upload-preview" id="uploadPreview">Bấm để chọn ảnh của con hoặc gia đình</div>
     <input id="photoInput" type="file" accept="image/*">
   </div>
 
@@ -6877,24 +6897,6 @@ body:not(.export-mode):not(.mobile-export-mode) #page1 .export-decoration-layer{
   </div>
 
   <button class="simple-save-main" id="saveAll">LƯU ẢNH VỀ MÁY</button>
-
-  <p class="save-device-note" id="saveDeviceNote">Trên điện thoại, nút lưu sẽ mở bảng Chia sẻ/Lưu ảnh của máy.</p>
-
-  <div class="save-preview-grid" id="savePreviewGrid"></div>
-
-  <p class="simple-save-tip" id="simpleSaveTip">
-    Trên điện thoại, nếu bảng Chia sẻ không xuất hiện, ảnh sẽ được mở ngay trong trang.
-    Nhấn giữ vào ảnh rồi chọn <strong>Lưu vào Ảnh</strong>.
-  </p>
-</section>
-
-<div class="loading" id="loading"><div><strong>Đang tạo tệp chất lượng cao…</strong><br><small>Vui lòng chờ trong giây lát.</small></div></div>
-<div class="toast" id="toast">Đã cập nhật</div>
-
-<section class="image-viewer" id="imageViewer" aria-hidden="true">
-  <div class="image-viewer-bar">
-    <div>
-      <strong>Ảnh thiệp đã sẵn sàng</strong>
       <span>Nhấn giữ vào ảnh rồi chọn “Lưu vào Ảnh”</span>
     </div>
     <button type="button" id="closeImageViewer">Đóng</button>
